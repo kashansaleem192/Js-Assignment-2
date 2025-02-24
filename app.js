@@ -158,8 +158,51 @@ var usdToPkr = 104.80;
 var sdrToPkr = 28;
 var totalPkr = ( usDollar*usdToPkr) + (SaudiRiyal*sdrToPkr);
 
-document.write( "Total Currency in PKR ", totalPkr)
+document.write( "Total Currency in PKR ", totalPkr , "<br>")
 
+//  Q 10
+
+var num =4;
+var result = ((num+5 )* 10)/ 3;
+
+document.write ( result);
+
+// Q 11
+
+var currentYear = 2025;
+var birthYear = 2006;
+var  age1 = currentYear-birthYear;
+var age2 = age1-1;
+
+document.write( "Current Year : ", currentYear , "<br>");
+document.write( "Birth Year " , birthYear , "<br>");
+document.write ("They are either", age1,  "or", age2 , "years old." , "<br>");
+
+// Q 12 
+
+var radius = 20;
+var pi = 3.142;
+var  circumference = 2 * pi * radius;
+var area = pi * radius * radius;
+document.write( "Radius of a circle ", radius );
+document.write( "Circumference is ", circumference , "<br>");
+document.write( "Area is ", area , "<br>");
+
+// Q 13
+
+document.write( "<h1>The Supply Calculator </h1>");
+var fav_snack = "Cookies";
+var currentAge = 18;
+var maximumAge = 45;
+var perDayAmountSnack= 3
+var yearsLeft =maximumAge-currentAge
+var totalsnack = perDayAmountSnack*yearsLeft
+
+ document.write( "Favourite Snack", fav_snack  , "<br>")
+ document.write( "Currrent Age", currentAge  , "<br>")
+ document.write( "Maximum Age", maximumAge  , "<br>")
+ document.write( "Amount of Snack Per Day", perDayAmountSnack  , "<br>")
+ document.write("You will need" , totalsnack , "to last you until the ripe old age of" ,maximumAge  , "<br>"  , "<br>")
 
 // Chapter6-9
 
@@ -257,3 +300,31 @@ document.write(
     number * 10,
     "<br> <br>"
 );
+
+//  Q 6 
+ 
+
+ var subject1 = prompt( "Enter Your First Subject Name")
+ var subject2 = prompt( "Enter Your Second Subject Name")
+ var subject3 = prompt( "Enter Your Third Subject Name")
+ var TotalMarks = 100
+ var obtainedMarks1stSubject = prompt("Enter Your First Subject Obtained Marks" )
+ var obtainedMarks2ndSubject = prompt("Enter Your Second Subject Obtained Marks" )
+ var obtainedMarks3rdSubject = prompt("Enter Your Third Subject Obtained Marks" )
+ var percentage1 = ( obtainedMarks1stSubject/TotalMarks)*100
+ var percentage2 = ( obtainedMarks2ndSubject/TotalMarks)*100
+ var percentage3 = ( obtainedMarks3rdSubject/TotalMarks)*100
+ var totalMarksAll = TotalMarks*3 
+ var totalObtainedMarks = obtainedMarks1stSubject + obtainedMarks2ndSubject + obtainedMarks3rdSubject
+ var totalPercentage = percentage1+percentage2+percentage3
+
+ document.write ("<table border= 1 cellpadding = 10>")
+ document.write( "<tr> <th> Subject </th>   <th> Total Marks</th>    <th>Obtained Marks </th>  <th>Percentage</th> </tr>"+
+               "<tr> <td>" + subject1 + "</td>" +  "<td>" + TotalMarks + "</td>" + "<td>" + obtainedMarks1stSubject + "</td>" +"<td>" + percentage1+ "%" + "</td>" +"</tr>")
+               document.write( "<tr> <td>" + subject2 + "</td>" +  "<td>" + TotalMarks + "</td>" + "<td>" + obtainedMarks2ndSubject + "</td>" +"<td>" + percentage2+ "%" + "</td>" +"</tr>" )
+               document.write( "<tr> <td>" + subject3 + "</td>" +  "<td>" + TotalMarks + "</td>" + "<td>" + obtainedMarks3rdSubject + "</td>" +"<td>" + percentage3+ "%" + "</td>" +"</tr>" )
+               document.write( "<tr> <td>" +  + "</td>" +  "<td>" + totalMarksAll + "</td>" + "<td>" + totalObtainedMarks + "</td>" +"<td>" + totalPercentage+ "%" + "</td>" +"</tr>" )
+ document.write( "</table>")
+
+
+
